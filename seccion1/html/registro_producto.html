@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doguito Petshop | Registrar producto</title>
+        <link rel="icon" href="../img/doguito.svg" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../css/base/base.css">
+        <link rel="stylesheet" href="../css/componentes/header.css">
+        <link rel="stylesheet" href="../css/cadastro_concluido.css">
+        <link rel="stylesheet" href="../css/componentes/cards.css">
+        <link rel="stylesheet" href="../css/componentes/inputs.css">
+        <link rel="stylesheet" href="../css/componentes/button.css">
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <img src="../img/doguitoadm.svg" alt="Logotipo Doguito" class="cabecalho__logo">
+            <nav>
+                <ul class="header__list-nav">
+                    <li class="header__link"><a href="#">Dashboard</a></li>
+                    <li class="header__link"><a href="lista_productos.html">Productos</a></li>
+                    <li class="header__link"><a href="../carpeta8/html/lista_cliente.html">Clientes</a></li>
+                    <li class="header__link"><a href="#">Pets</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container flex flex--center flex--column">
+            <section class="cartao cadastro">
+                <h1 class="card__title">Registrar producto</h1>
+                <form class="flex flex--column" data-from>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input nombre" type="text" placeholder="Nombre" data-nombre/>
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container registry__price-container">
+                        <input name="price" id="price" class="input" type="text" placeholder="Precio" data-precio/>
+                        <label class="input-label" for="price">Precio</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container registry__description-container">
+                        <input class="input" name="description" id="description" placeholder="Descripción" data-descripcion/>
+                        <label class="input-label" for="description">Descripción</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <button class="button button_aceder button_hover button_producto">Registrar producto</button>
+                </form>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/registro_producto/registro_producto.js"></script>
+        <script type="module" src="../js/lista_productos/controller/registro-producto.js"></script>
+    </body>
+</html>

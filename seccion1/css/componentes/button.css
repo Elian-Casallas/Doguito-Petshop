@@ -1,0 +1,47 @@
+.button{
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 10rem;
+    overflow-x: hidden;
+    padding: 1.125rem;
+    box-sizing: border-box;
+    color: var(--contrast-light-color);
+    font-size: var(--font-size-button);
+    align-self: center;
+    text-align: center;
+}
+
+.simple-button {
+    border: none;
+    background-color: unset;
+}
+  
+.simple-button--add {
+    color: var(--primary-color);
+}
+  
+.simple-button--delete {
+    color: var(--warning-color);
+}
+  
+.simple-button--edit {
+    color: var(--success-color);
+}
+
+.button_hover:hover{
+    cursor: pointer;
+    background-color: rgb(3, 3, 90);
+    transition: all 2s;
+}
+
+.div_boton{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_aceder{
+    max-width: 20rem;
+}

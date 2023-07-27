@@ -1,0 +1,42 @@
+{
+  "perfil": [
+    {
+      "nombre": "Elian",
+      "email": "elianzajir_19@hotmail.com",
+      "id": "28b9d3eb-8875-4f28-bdbe-6f0bfc51a587"
+    },
+    {
+      "nombre": "Susan",
+      "email": "Susan@Strom.FantasticFour",
+      "id": "06927773-d98f-4bdc-a03f-bccb18ad6b5c"
+    },
+    {
+      "nombre": "Wanda",
+      "email": "Wanda@Maximof.Avengers",
+      "id": "f3b29e36-242c-4b48-84c7-0cfe5c7e1515"
+    },
+    {
+      "nombre": "Natasha",
+      "email": "Natasha@Ronamoff.Avengers",
+      "id": "69d13feb-2b37-4f1d-90ea-3d1ec3bd54b2"
+    },
+    {
+      "nombre": "Jean",
+      "email": "Jean@Grey.Xmen",
+      "id": "229919e2-de4f-47fb-ad7b-854736b2766b"
+    },
+    {
+      "nombre": "Felicia",
+      "email": "Felicia@Hardy.Black",
+      "id": "91eefaf9-6e0c-4e16-9283-4abf77416547"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Tomate",
+      "precio": "10",
+      "descripcion": "Son 10 tomates",
+      "id": "e830ff5d-20f1-4d7c-a63d-45ca8efc6b14"
+    }
+  ]
+}

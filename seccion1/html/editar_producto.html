@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doguito Petshop | Clientes</title>
+        <link rel="icon" href="../img/doguitoadm.svg" type="image/x-icon" >
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="../carpeta8/css/base/base.css">
+        <link rel="stylesheet" href="../carpeta8/css/componentes/header.css">
+        <link rel="stylesheet" href="../carpeta8/css/componentes/card.css">
+        <link rel="stylesheet" href="../carpeta8/css/register_cliente.css">
+        <link rel="stylesheet" href="../carpeta8/css/componentes/inputs.css">
+        <link rel="stylesheet" href="../carpeta8/css/componentes/button.css">
+        
+    </head>
+
+    <body>
+        <header class="header container">
+            <img src="../img/doguitoadm.svg" alt="Logotipo Doguito" class="header__logo">
+            <nav>
+                <ul class="header__list-nav">
+                    <li class="header__link"><a class="clientes" href="#">Dashboard</a></li>
+                    <li class="header__link"><a class="clientes" href="lista_productos.html">Productos</a></li>
+                    <li class="header__link"><a class="clientes" href="../carpeta8/html/lista_cliente.html">Clientes</a></li>
+                    <li class="header__link"><a class="clientes" href="#">Pets</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container flex flex--center flex--column">
+            <section class="card cadastro">
+                <h1 class="card__title">Editar</h1>
+                <form action="#" class="flex flex--column" data-form>
+                    <div class="input-container">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input" required data-nombre>
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="price" id="price" class="input" type="text" placeholder="Precio" data-precio/>
+                        <label class="input-label" for="price">Precio</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="input" name="description" id="description" placeholder="Descripción" data-descripcion/>
+                        <label class="input-label" for="description">Descripción</label>
+                        <span class="input-menssage-error">Este campo no es valido</span>
+                    </div>
+                    <button type="submit" class="button button_Cliente">Editar cliente</button>
+                </form>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="module" src="../js/lista_productos/controller/actualizar_controller.js"></script>
+    </body>
+</html>
