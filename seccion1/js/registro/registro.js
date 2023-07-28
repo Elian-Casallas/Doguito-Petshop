@@ -84,6 +84,9 @@ function visualizar (bandera = false, pos = 0) {
             setTimeout(() => {fieldset.children[1].children[0].focus()}, 500);
             boton_ = document.querySelector(`.${boton_arreglo[0]}`);
             boton_.style.visibility= "hidden";
+            if (window.matchMedia("(max-width: 485px)").matches){
+                boton_.style.display= "none";
+            }
             boton_ = document.querySelector(`.${boton_arreglo[1]}`);
             boton_.style.visibility= "hidden";
             posicionExacta = 0;
@@ -98,8 +101,10 @@ function visualizar (bandera = false, pos = 0) {
                 regresar_ = false;
             }
             setTimeout(() => {fieldset.children[1].children[0].focus()}, 500);
-            boton_ = document.querySelector(`.${boton_arreglo[0]}`);
-            boton_.style.visibility= "visible";
+            if (!window.matchMedia("(max-width: 485px)").matches){
+                boton_ = document.querySelector(`.${boton_arreglo[0]}`);
+                boton_.style.visibility= "visible";
+            }
             posicionExacta = 1;
             posicion = 2;
             if (bandera){
@@ -113,8 +118,10 @@ function visualizar (bandera = false, pos = 0) {
             fieldset.replaceChild(formatoDiv(div2, 2, 1), fieldset.children[1]);
             fieldset.replaceChild(formatoDiv(div2, 2, 2), fieldset.children[2]);
             setTimeout(() => {fieldset.children[1].children[0].focus()}, 500);
-            boton_ = document.querySelector(`.${boton_arreglo[0]}`);
-            boton_.style.display= "none";
+            if (!window.matchMedia("(max-width: 485px)").matches){
+                boton_ = document.querySelector(`.${boton_arreglo[0]}`);
+                boton_.style.display= "none";
+            }
             boton_ = document.querySelector(`.${boton_arreglo[2]}`);
             boton_.style.display= "none";
             boton_ = document.querySelector(`.${boton_arreglo[1]}`);
