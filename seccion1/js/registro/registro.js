@@ -83,9 +83,9 @@ function visualizar (bandera = false, pos = 0) {
             }
             setTimeout(() => {fieldset.children[1].children[0].focus()}, 500);
             boton_ = document.querySelector(`.${boton_arreglo[0]}`);
-            boton_.style.visibility= "hidden";
-            if (window.matchMedia("(max-width: 485px)").matches){
-                console.log("aqui")
+            if (!window.matchMedia("(max-width: 485px)").matches){
+                boton_.style.visibility= "hidden";
+            }else{
                 boton_.style.display= "none";
             }
             boton_ = document.querySelector(`.${boton_arreglo[1]}`);
