@@ -45,3 +45,9 @@
 .button_aceder{
     max-width: 20rem;
 }
+
+@media (max-width: 485px){
+    .Regresar{
+        display: "none";
+    }
+}
